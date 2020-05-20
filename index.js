@@ -195,8 +195,13 @@ app.get('/', function (req, res) {
 })
 
 app.get('/debug', function (req, res) {
-    main();
-    res.send(':)')
+    if ( config.debug == 1) {
+        main();
+        res.send('Debuging Aktif Veritabanı yenilendi')
+    } else {
+        res.send('Debuging Aktif Değil')
+    }
+
   
 })
 
