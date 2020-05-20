@@ -98,6 +98,85 @@ async function main() {
             .catch((error) => { console.error(error) })
         }
 
+
+    // baf Post
+
+    const bafist = scrapedData.find(baf)
+    if (bafist == "undefined") {console.log("baf Verisi Bulunamadı")} 
+    else {
+        console.log("baf Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: bafist.istasyon, tarih: bafist.tarih, hava: bafist.hava, sicaklik: bafist.sicaklik, nem: bafist.nem, basinc: bafist.basinc, gorus: bafist.gorus, ruzgar: bafist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // iskele Post
+
+    const iskeleist = scrapedData.find(iskele)
+    if (iskeleist == "undefined") {console.log("iskele Verisi Bulunamadı")} 
+    else {
+        console.log("iskele Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: iskeleist.istasyon, tarih: iskeleist.tarih, hava: iskeleist.hava, sicaklik: iskeleist.sicaklik, nem: iskeleist.nem, basinc: iskeleist.basinc, gorus: iskeleist.gorus, ruzgar: iskeleist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+
+    // gazimagusa Post
+
+    const gazimagusaist = scrapedData.find(gazimagusa)
+    if (gazimagusaist == "undefined") {console.log("gazimagusa Verisi Bulunamadı")} 
+    else {
+        console.log("gazimagusa Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: gazimagusaist.istasyon, tarih: gazimagusaist.tarih, hava: gazimagusaist.hava, sicaklik: gazimagusaist.sicaklik, nem: gazimagusaist.nem, basinc: gazimagusaist.basinc, gorus: gazimagusaist.gorus, ruzgar: gazimagusaist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // guzelyurt Post
+
+    const guzelyurtist = scrapedData.find(guzelyurt)
+    if (guzelyurtist == "undefined") {console.log("guzelyurt Verisi Bulunamadı")} 
+    else {
+        console.log("guzelyurt Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: guzelyurtist.istasyon, tarih: guzelyurtist.tarih, hava: guzelyurtist.hava, sicaklik: guzelyurtist.sicaklik, nem: guzelyurtist.nem, basinc: guzelyurtist.basinc, gorus: guzelyurtist.gorus, ruzgar: guzelyurtist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // lefke Post
+
+    const lefkeist = scrapedData.find(lefke)
+    if (lefkeist == "undefined") {console.log("lefke Verisi Bulunamadı")} 
+    else {
+        console.log("lefke Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: lefkeist.istasyon, tarih: lefkeist.tarih, hava: lefkeist.hava, sicaklik: lefkeist.sicaklik, nem: lefkeist.nem, basinc: lefkeist.basinc, gorus: lefkeist.gorus, ruzgar: lefkeist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // akdeniz Post
+
+    const akdenizist = scrapedData.find(akdeniz)
+    if (akdenizist == "undefined") {console.log("akdeniz Verisi Bulunamadı")} 
+    else {
+        console.log("akdeniz Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: akdenizist.istasyon, tarih: akdenizist.tarih, hava: akdenizist.hava, sicaklik: akdenizist.sicaklik, nem: akdenizist.nem, basinc: akdenizist.basinc, gorus: akdenizist.gorus, ruzgar: akdenizist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // yesilirmak Post
+
+    const yesilirmakist = scrapedData.find(yesilirmak)
+    if (yesilirmakist == "undefined") {console.log("yesilirmak Verisi Bulunamadı")} 
+    else {
+        console.log("yesilirmak Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: yesilirmakist.istasyon, tarih: yesilirmakist.tarih, hava: yesilirmakist.hava, sicaklik: yesilirmakist.sicaklik, nem: yesilirmakist.nem, basinc: yesilirmakist.basinc, gorus: yesilirmakist.gorus, ruzgar: yesilirmakist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
 }
 main();
 
