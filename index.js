@@ -10,7 +10,7 @@ app.post('/db', function (req, res) {
   })
 
 app.get('/api', (req, res) => {
-    res.json({ guncellenmetarihi: "20.05.2020 09:00", sehir: "TEST", hava: "HAVA AÇIK", sicaklik: "37.3°C", isbasicaklik: "10.6°C", basinc: "1010.3 hPa", gorus: "10KM", ruzgar: "Kuzeydoğudan (30) 12 kt."})
+    res.json({ guncellenmetarihi: "20.05.2020 09:00", sehir: "Iskele", hava: "HAVA AÇIK", sicaklik: "37.3°C", isbasicaklik: "10.6°C", basinc: "1010.3 hPa", gorus: "10KM", ruzgar: "Kuzeydoğudan (30) 12 kt."})
 }) 
 
 app.listen(process.env.PORT || 3000,
