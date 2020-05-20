@@ -5,6 +5,11 @@ var config = {};
 config.dburl = "http://127.0.0.1:80/db";
 config.apiurl = "http://127.0.0.1:80/api"
 
+// Scrap Settings
+
+config.current = "http://kktcmeteor.org/sondurumlar/kktc-geneltablo";
+config.threedays = "http://kktcmeteor.org/tahminler/3gundetayli"
+
 // Global Settins
 
 config.apikey = "P6fTrTjdXsYmygKy";
