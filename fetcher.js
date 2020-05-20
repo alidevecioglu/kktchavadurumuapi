@@ -87,6 +87,17 @@ async function main() {
                 .catch((error) => { console.error(error) })
         }
 
+    // Larnaka Post
+
+    const larnakaist = scrapedData.find(larnaka)
+    if (larnakaist == "undefined") {console.log("Larnaka Verisi Bulunamadı")} 
+    else {
+        console.log("Larnaka Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: larnakaist.istasyon, tarih: larnakaist.tarih, hava: larnakaist.hava, sicaklik: larnakaist.sicaklik, nem: larnakaist.nem, basinc: larnakaist.basinc, gorus: larnakaist.gorus, ruzgar: larnakaist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
 }
 main();
 
