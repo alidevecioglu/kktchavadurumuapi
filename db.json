@@ -2,83 +2,6 @@
   "limasol": [
     {
       "id": 1,
-      "istasyon": "Limasol",
-      "tarih": "20.05.2020 14:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "33°C",
-      "nem": "29 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Doğudan (110) 1 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "Limasol",
-      "tarih": "20.05.2020 14:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "33°C",
-      "nem": "29 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Doğudan (110) 1 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "limasol",
-      "tarih": "20.05.2020 14:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "33°C",
-      "nem": "29 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Doğudan (110) 1 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "limasol",
-      "tarih": "20.05.2020 14:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "33°C",
-      "nem": "29 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Doğudan (110) 1 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "limasol",
-      "tarih": "20.05.2020 14:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "33°C",
-      "nem": "29 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Doğudan (110) 1 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "limasol",
-      "tarih": "20.05.2020 14:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "33°C",
-      "nem": "29 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Doğudan (110) 1 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "limasol",
-      "tarih": "20.05.2020 15:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "32°C",
-      "nem": "40 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Batıdan (290) 3 kt."
-    },
-    {
-      "id": 1,
       "istasyon": "limasol",
       "tarih": "20.05.2020 15:50",
       "hava": "HAVA ACIK",
@@ -93,285 +16,171 @@
     {
       "id": 1,
       "istasyon": "ercan",
-      "tarih": "20.05.2020 15:20",
+      "tarih": "20.05.2020 16:20",
       "hava": "HAVA ACIK",
-      "sicaklik": "37°C",
-      "nem": "13 %",
+      "sicaklik": "34°C",
+      "nem": "22 %",
       "basinc": "1008 hPa",
       "gorus": "10 km",
-      "ruzgar": "Güneyden (180) 6 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "ercan",
-      "tarih": "20.05.2020 15:20",
-      "hava": "HAVA ACIK",
-      "sicaklik": "37°C",
-      "nem": "13 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneyden (180) 6 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "ercan",
-      "tarih": "20.05.2020 15:20",
-      "hava": "HAVA ACIK",
-      "sicaklik": "37°C",
-      "nem": "13 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneyden (180) 6 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "ercan",
-      "tarih": "20.05.2020 15:20",
-      "hava": "HAVA ACIK",
-      "sicaklik": "37°C",
-      "nem": "13 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneyden (180) 6 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "ercan",
-      "tarih": "20.05.2020 15:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "37°C",
-      "nem": "12 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneybatıdan (210) 7 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "ercan",
-      "tarih": "20.05.2020 15:50",
-      "hava": "HAVA ACIK",
-      "sicaklik": "37°C",
-      "nem": "12 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneybatıdan (210) 7 kt."
+      "ruzgar": "Batıdan (270) 12 kt."
     }
   ],
   "larnaka": [
     {
       "id": 1,
       "istasyon": "larnaka",
-      "tarih": "20.05.2020 15:00",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "32°C",
-      "nem": "46 %",
-      "basinc": "1007 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneyden (180) 7 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "larnaka",
-      "tarih": "20.05.2020 15:30",
+      "tarih": "20.05.2020 16:30",
       "hava": "HAVA ACIK",
-      "sicaklik": "32°C",
-      "nem": "38 %",
-      "basinc": "1007 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneyden (190) 5 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "larnaka",
-      "tarih": "20.05.2020 15:30",
-      "hava": "HAVA ACIK",
-      "sicaklik": "32°C",
-      "nem": "38 %",
-      "basinc": "1007 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneyden (190) 5 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "larnaka",
-      "tarih": "20.05.2020 15:30",
-      "hava": "HAVA ACIK",
-      "sicaklik": "32°C",
-      "nem": "38 %",
-      "basinc": "1007 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneyden (190) 5 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "larnaka",
-      "tarih": "20.05.2020 16:00",
-      "hava": "HAVA ACIK",
-      "sicaklik": "32°C",
-      "nem": "38 %",
+      "sicaklik": "31°C",
+      "nem": "37 %",
       "basinc": "1008 hPa",
       "gorus": "10 km",
-      "ruzgar": "Güneybatıdan (210) 4 kt."
+      "ruzgar": "Güneybatıdan (220) 4 kt."
     }
   ],
   "baf": [
     {
       "id": 1,
       "istasyon": "baf",
-      "tarih": "20.05.2020 15:00",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "28°C",
-      "nem": "61 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Batıdan (270) 6 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "baf",
-      "tarih": "20.05.2020 15:30",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "28°C",
-      "nem": "58 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Batıdan (260) 5 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "baf",
-      "tarih": "20.05.2020 15:30",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "28°C",
-      "nem": "58 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Batıdan (260) 5 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "baf",
-      "tarih": "20.05.2020 15:30",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "28°C",
-      "nem": "58 %",
-      "basinc": "1008 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Batıdan (260) 5 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "baf",
-      "tarih": "20.05.2020 16:00",
+      "tarih": "20.05.2020 16:30",
       "hava": "AZ BULUTLU",
       "sicaklik": "27°C",
-      "nem": "69 %",
+      "nem": "57 %",
       "basinc": "1008 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (270) 5 kt."
+      "ruzgar": "Batıdan (290) 5 kt."
     }
   ],
-  "iskele": [],
+  "iskele": [
+    {
+      "id": 1,
+      "istasyon": "iskele",
+      "tarih": "20.05.2020 16:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "35.2°C",
+      "nem": " 24 %",
+      "basinc": "1007.8 hPa",
+      "gorus": "10 km",
+      "ruzgar": "Sakin (0) 0 kt."
+    }
+  ],
   "gazimagusa": [
     {
       "id": 1,
       "istasyon": "gazimagusa",
-      "tarih": "20.05.2020 15:00",
+      "tarih": "20.05.2020 16:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "28.4°C",
-      "nem": " 65 %",
+      "sicaklik": "30°C",
+      "nem": " 49 %",
       "basinc": "1009.7 hPa",
       "gorus": "10 km",
-      "ruzgar": "Güneydoğudan (120) 4 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "gazimagusa",
-      "tarih": "20.05.2020 15:00",
-      "hava": "HAVA ACIK",
-      "sicaklik": "28.4°C",
-      "nem": " 65 %",
-      "basinc": "1009.7 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneydoğudan (120) 4 kt."
+      "ruzgar": "Güneyden (190) 4 kt."
     }
   ],
-  "lefke": [],
-  "akdeniz": [],
+  "lefke": [
+    {
+      "id": 1,
+      "istasyon": "lefke",
+      "tarih": "20.05.2020 16:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "25.2°C",
+      "nem": " 71 %",
+      "basinc": "1007.2 hPa",
+      "gorus": "10 km",
+      "ruzgar": "Kuzeydoğudan (30) 5 kt."
+    }
+  ],
+  "akdeniz": [
+    {
+      "id": 1,
+      "istasyon": "akdeniz",
+      "tarih": "20.05.2020 16:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "28.4°C",
+      "nem": " 49 %",
+      "basinc": "1009.7 hPa",
+      "gorus": "10 km",
+      "ruzgar": "Batıdan (280) 7 kt."
+    }
+  ],
   "yesilirmak": [],
   "girne": [
     {
       "id": 1,
       "istasyon": "girne",
-      "tarih": "20.05.2020 15:00",
+      "tarih": "20.05.2020 16:00",
       "hava": "AZ BULUTLU",
-      "sicaklik": "29.3°C",
-      "nem": " 61 %",
-      "basinc": "1009.5 hPa",
+      "sicaklik": "29.4°C",
+      "nem": " 48 %",
+      "basinc": "1009.6 hPa",
       "gorus": "10 km",
-      "ruzgar": "Kuzeybatıdan (300) 10 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "girne",
-      "tarih": "20.05.2020 15:00",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "29.3°C",
-      "nem": " 61 %",
-      "basinc": "1009.5 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Kuzeybatıdan (300) 10 kt."
+      "ruzgar": "Batıdan (280) 11 kt."
     }
   ],
-  "lefkosa": [],
-  "gecitkale": [],
+  "lefkosa": [
+    {
+      "id": 1,
+      "istasyon": "lefkosa",
+      "tarih": "20.05.2020 16:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "34.2°C",
+      "nem": " 25 %",
+      "basinc": "1009.4 hPa",
+      "gorus": "10 km",
+      "ruzgar": "Güneyden (190) 6 kt."
+    }
+  ],
+  "gecitkale": [
+    {
+      "id": 1,
+      "istasyon": "gecitkale",
+      "tarih": "20.05.2020 16:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "36.1°C",
+      "nem": " 12 %",
+      "basinc": "1008.5 hPa",
+      "gorus": "10 km",
+      "ruzgar": "Güneyden (200) 6 kt."
+    }
+  ],
   "dipkarpaz": [
     {
       "id": 1,
       "istasyon": "dipkarpaz",
-      "tarih": "20.05.2020 15:00",
+      "tarih": "20.05.2020 16:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "33.2°C",
-      "nem": " 16 %",
-      "basinc": "1007.4 hPa",
+      "sicaklik": "31.7°C",
+      "nem": " 19 %",
+      "basinc": "1007.5 hPa",
       "gorus": "10 km",
-      "ruzgar": "Güneydoğudan (140) 8 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "dipkarpaz",
-      "tarih": "20.05.2020 15:00",
-      "hava": "HAVA ACIK",
-      "sicaklik": "33.2°C",
-      "nem": " 16 %",
-      "basinc": "1007.4 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Güneydoğudan (140) 8 kt."
+      "ruzgar": "Güneyden (160) 11 kt."
     }
   ],
-  "yenierenkoy": [],
+  "yenierenkoy": [
+    {
+      "id": 1,
+      "istasyon": "yenierenkoy",
+      "tarih": "20.05.2020 16:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "33.3°C",
+      "nem": " 18 %",
+      "basinc": "1007.4 hPa",
+      "gorus": "10 km",
+      "ruzgar": "Güneydoğudan (120) 5 kt."
+    }
+  ],
   "alsancak": [
     {
       "id": 1,
       "istasyon": "alsancak",
-      "tarih": "20.05.2020 15:00",
+      "tarih": "20.05.2020 16:00",
       "hava": "AZ BULUTLU",
-      "sicaklik": "29.7°C",
-      "nem": " 47 %",
-      "basinc": "1009.5 hPa",
+      "sicaklik": "29.1°C",
+      "nem": " 48 %",
+      "basinc": "1009.8 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (290) 18 kt."
-    },
-    {
-      "id": 1,
-      "istasyon": "alsancak",
-      "tarih": "20.05.2020 15:00",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "29.7°C",
-      "nem": " 47 %",
-      "basinc": "1009.5 hPa",
-      "gorus": "10 km",
-      "ruzgar": "Batıdan (290) 18 kt."
+      "ruzgar": "Kuzeybatıdan (300) 6 kt."
     }
-  ]
+  ],
+  "guzelyurt": []
 }
