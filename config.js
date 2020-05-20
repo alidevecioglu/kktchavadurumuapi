@@ -2,7 +2,7 @@ var config = {};
 
 // Web Settings
 
-config.debug = 1;
+config.debug = 0;
 
 // Scrap Settings
 
