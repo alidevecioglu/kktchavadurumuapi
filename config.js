@@ -2,7 +2,7 @@ var config = {};
 
 // Web Settings
 
-config.dburl = "https://kktchavadurumuapi.herokuapp.com/db";
+config.dburl = "http://127.0.0.1:3000/db";
 config.apiurl = "https://kktchavadurumuapi.herokuapp.com/api"
 
 // Scrap Settings

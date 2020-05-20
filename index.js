@@ -23,22 +23,6 @@ app.get('/', function (req, res) {
 app.post('/db', (req, res) => {
     var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     console.log("DB İsteği Geldi İp : " + ip)
-    if (req.body.key == config.dbkey) {
-      console.log("Gelen Key Doğrulandı İşleme Alınıyor");
-      const istasyon = req.body.istasyon
-      const tarih = req.body.tarih
-      const hava = req.body.hava
-      const sicaklik = req.body.sicaklik
-      const nem = req.body.nem
-      const basinc = req.body.basinc
-      const gorus = req.body.gorus
-      const ruzgar = req.body.ruzgar
-
-      console.log("Gelenler : " + istasyon + tarih + hava + sicaklik + nem + basinc + gorus + ruzgar)
-      }
-     else {
-      console.log("Gelen Key Yanlış Çöpe Atılıyor");
-    }
 
 });
 
