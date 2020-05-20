@@ -177,6 +177,72 @@ async function main() {
             .catch((error) => { console.error(error) })
         }
 
+    // girne Post
+
+    const girneist = scrapedData.find(girne)
+    if (girneist == "undefined") {console.log("girne Verisi Bulunamadı")} 
+    else {
+        console.log("girne Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: girneist.istasyon, tarih: girneist.tarih, hava: girneist.hava, sicaklik: girneist.sicaklik, nem: girneist.nem, basinc: girneist.basinc, gorus: girneist.gorus, ruzgar: girneist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // lefkosa Post
+
+    const lefkosaist = scrapedData.find(lefkosa)
+    if (lefkosaist == "undefined") {console.log("lefkosa Verisi Bulunamadı")} 
+    else {
+        console.log("lefkosa Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: lefkosaist.istasyon, tarih: lefkosaist.tarih, hava: lefkosaist.hava, sicaklik: lefkosaist.sicaklik, nem: lefkosaist.nem, basinc: lefkosaist.basinc, gorus: lefkosaist.gorus, ruzgar: lefkosaist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // gecitkale Post
+
+    const gecitkaleist = scrapedData.find(gecitkale)
+    if (gecitkaleist == "undefined") {console.log("gecitkale Verisi Bulunamadı")} 
+    else {
+        console.log("gecitkale Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: gecitkaleist.istasyon, tarih: gecitkaleist.tarih, hava: gecitkaleist.hava, sicaklik: gecitkaleist.sicaklik, nem: gecitkaleist.nem, basinc: gecitkaleist.basinc, gorus: gecitkaleist.gorus, ruzgar: gecitkaleist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // dipkarpaz Post
+
+    const dipkarpazist = scrapedData.find(dipkarpaz)
+    if (dipkarpazist == "undefined") {console.log("dipkarpaz Verisi Bulunamadı")} 
+    else {
+        console.log("dipkarpaz Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: dipkarpazist.istasyon, tarih: dipkarpazist.tarih, hava: dipkarpazist.hava, sicaklik: dipkarpazist.sicaklik, nem: dipkarpazist.nem, basinc: dipkarpazist.basinc, gorus: dipkarpazist.gorus, ruzgar: dipkarpazist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // yenierenkoy Post
+
+    const yenierenkoyist = scrapedData.find(yenierenkoy)
+    if (yenierenkoyist == "undefined") {console.log("yenierenkoy Verisi Bulunamadı")} 
+    else {
+        console.log("yenierenkoy Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: yenierenkoyist.istasyon, tarih: yenierenkoyist.tarih, hava: yenierenkoyist.hava, sicaklik: yenierenkoyist.sicaklik, nem: yenierenkoyist.nem, basinc: yenierenkoyist.basinc, gorus: yenierenkoyist.gorus, ruzgar: yenierenkoyist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
+    // alsancak Post
+
+    const alsancakist = scrapedData.find(alsancak)
+    if (alsancakist == "undefined") {console.log("alsancak Verisi Bulunamadı")} 
+    else {
+        console.log("alsancak Verisi Güncelleniyor")
+        axios.post(dburl, { key: dbkey, istasyon: alsancakist.istasyon, tarih: alsancakist.tarih, hava: alsancakist.hava, sicaklik: alsancakist.sicaklik, nem: alsancakist.nem, basinc: alsancakist.basinc, gorus: alsancakist.gorus, ruzgar: alsancakist.ruzgar })
+            .then((res) => { console.log("Gönderildi") })
+            .catch((error) => { console.error(error) })
+        }
+
 }
 main();
 
