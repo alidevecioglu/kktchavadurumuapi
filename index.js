@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 app.post('/db', (req, res) => {
     var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     console.log("DB İsteği Geldi İp : " + ip)
-    if (req.body.key == beklenenkey) {
+    if (req.body.key == config.dbkey) {
       console.log("Gelen Key Doğrulandı İşleme Alınıyor");
       const istasyon = req.body.istasyon
       const tarih = req.body.tarih
