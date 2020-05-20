@@ -189,19 +189,23 @@ app.get('/', function (req, res) {
   
 })
 
-app.get('/amdin', function (req, res) {
+app.get('/debug', function (req, res) {
     main();
     res.send(':)')
   
 })
 
-app.post('/db', (req, res) => {
-    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-    console.log("DB İsteği Geldi İp : " + ip)
 
-});
+app.get('/api', function (req, res) {
+    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    console.log("/Api Sayfasına Gelen İstek : " + ip)
+    res.send('Şehir Verisi Eksik')
+})
 
 app.get('/api/:sehir', (req, res) => {
+
+    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    console.log("/api/" + req.params.sehir + " Adresine istek geldi ip : " + ip)
 
     const veri = db.get(req.params.sehir)
                 .find({ id: 1 })
