@@ -2,8 +2,8 @@ var config = {};
 
 // Web Settings
 
-config.dburl = "http://127.0.0.1:80/db";
-config.apiurl = "http://127.0.0.1:80/api"
+config.dburl = "https://kktchavadurumuapi.herokuapp.com/db";
+config.apiurl = "https://kktchavadurumuapi.herokuapp.com/api"
 
 // Scrap Settings
 

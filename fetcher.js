@@ -4,6 +4,10 @@ const request = require("request-promise");
 const cheerio = require("cheerio");
 const axios = require('axios');
 
+const istasyonlar = ["limasol", "ercan", "larnaka", "baf", "iskele", "gazimagusa", "guzelyurt", "lefke", "akdeniz", "yesilirmak", "girne", "lefkosa", "gecitkale", "dipkarpaz", "yenierenkoy", "alsancak"];
+const dburl = config.dburl
+const dbkey = config.dbkey
+
 // Finds
 function limasol(sehir) {return sehir.istasyon === 'limasol';}
 function ercan(sehir) {return sehir.istasyon === 'ercan';}
@@ -59,10 +63,29 @@ async function main() {
         const tableRow = { istasyon, tarih, hava, sicaklik, nem, basinc, gorus, ruzgar };
         scrapedData.push(tableRow);
     });
-    //console.log(scrapedData);
-    //console.log(scrapedData.find(iskele));
+
+    // Limasol Post
+
+    const limasolist = scrapedData.find(limasol)
+    if (limasolist == "undefined") {console.log("Limasol Verisi Bulunamadı")} 
+    else {
+            console.log("Limasol Verisi Güncelleniyor")
+            axios.post(dburl, { key: dbkey, istasyon: limasolist.istasyon, tarih: limasolist.tarih, hava: limasolist.hava, sicaklik: limasolist.sicaklik, nem: limasolist.nem, basinc: limasolist.basinc, gorus: limasolist.gorus, ruzgar: limasolist.ruzgar })
+              .then((res) => { console.log("Gönderildi") })
+              .catch((error) => { console.error(error) })
+        }
+
+
+    // Ercan Post
+
     const ercanist = scrapedData.find(ercan)
-    console.log(ercanist[1])
+    if (ercanist == "undefined") {console.log("Ercan Verisi Bulunamadı")} 
+    else {
+            console.log("Ercan Verisi Güncelleniyor")
+            axios.post(dburl, { key: dbkey, istasyon: ercanist.istasyon, tarih: ercanist.tarih, hava: ercanist.hava, sicaklik: ercanist.sicaklik, nem: ercanist.nem, basinc: ercanist.basinc, gorus: ercanist.gorus, ruzgar: ercanist.ruzgar })
+                .then((res) => { console.log("Gönderildi") })
+                .catch((error) => { console.error(error) })
+        }
 
 }
 main();
