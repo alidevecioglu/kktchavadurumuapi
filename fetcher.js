@@ -63,6 +63,13 @@ async function main() {
         const tableRow = { istasyon, tarih, hava, sicaklik, nem, basinc, gorus, ruzgar };
         scrapedData.push(tableRow);
     });
+    //console.log(scrapedData);
+    //console.log(scrapedData.find(iskele));
+    //const ercanist = scrapedData.find(ercan)
+    //const iskeleist = scrapedData.find(iskele)
+    //console.log(scrapedData.find(iskele))
+    //console.log(istasyonlar)
+    const limasolist = scrapedData.find(limasol)
 
 
 }
