@@ -180,9 +180,9 @@ if (alsancakdata == undefined) { console.log("alsancak Verisi Yüklenemedi")} el
 }
 
 
-var minutes = 5, the_interval = minutes * 60 * 1000;
+var minutes = 1, the_interval = minutes * 60 * 1000;
 setInterval(function() {
-  console.log("I am doing my 5 minutes check");
+  console.log("I am doing my 1 minutes check");
   main();
 }, the_interval);
 
@@ -221,7 +221,7 @@ app.get('/api/:sehir', (req, res) => {
                 .find({ id: 1 })
                 .value()
     if ( veri == undefined) {console.log(req.params.sehir  + " Sorgusu atıldı ama veritabanında yok diye sorgu reddedildi"); res.send('Bu şehir henüz veritabanımıza ekli değil'); return false } 
-    else {res.json({ guncellenmetarihi: veri.tarih, sehir: veri.istasyon, hava: veri.hava, sicaklik: veri.sicaklik,  basinc: veri.basinc, nem: veri.nem, gorus: veri.gorus, ruzgar: veri.ruzgar})}
+    else {res.json({ guncellenmetarihi: veri.tarih, sehir: veri.istasyon, hava: veri.hava, sicaklik: veri.sicaklik, basinc: veri.basinc, nem: veri.nem, gorus: veri.gorus, ruzgar: veri.ruzgar})}
 
 
  
