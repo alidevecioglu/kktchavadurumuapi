@@ -22,8 +22,6 @@ const db = low(adapter)
 db.defaults({ limasol: [], ercan: [], larnaka: [], baf: [], iskele: [], gazimagusa: [], lefke: [], akdeniz: [], yesilirmak: [], girne: [], lefkosa: [], gecitkale: [], dipkarpaz: [], yenierenkoy: [], alsancak: [], guzelyurt: [] })
   .write()
 
-const apikey = config.apikey
-const dbkey = config.dbkey
 
 // Finds
 function limasol(sehir) {return sehir.istasyon === 'Limasol';}
@@ -264,12 +262,6 @@ app.get('/app/:sehir', (req, res) => {
         res.send('Şehir : ' + veri.istasyon + ", Güncellenme Tarihi : " + veri.tarih + ", Hava : " + veri.hava + ", Sıcaklık : " + veri.sicaklik + ", Nem : " + veri.nem + ", Basınç : " + veri.basinc + ", Görüş : " + veri.gorus + ", Rüzgar : " + veri.ruzgar)    
     }
 
-
- 
-/*     const istenen = limasol
-    const istenenistasyon = scrapedData.find(istenen)
-    res.json({ guncellenmetarihi: istenenistasyon.tarih, sehir: istenenistasyon.istasyon, hava: istenenistasyon.hava, sicaklik: istenenistasyon.sicaklik,  basinc: istenenistasyon.basinc, nem: istenenistasyon.nem, gorus: istenenistasyon.gorus, ruzgar: istenenistasyon.ruzgar})
- */
 }) 
 
 app.get('/debug', function (req, res) {
@@ -302,11 +294,6 @@ app.get('/api/:sehir', (req, res) => {
     else {res.json({ guncellenmetarihi: veri.tarih, sehir: veri.istasyon, hava: veri.hava, sicaklik: veri.sicaklik, basinc: veri.basinc, nem: veri.nem, gorus: veri.gorus, ruzgar: veri.ruzgar})}
 
 
- 
-/*     const istenen = limasol
-    const istenenistasyon = scrapedData.find(istenen)
-    res.json({ guncellenmetarihi: istenenistasyon.tarih, sehir: istenenistasyon.istasyon, hava: istenenistasyon.hava, sicaklik: istenenistasyon.sicaklik,  basinc: istenenistasyon.basinc, nem: istenenistasyon.nem, gorus: istenenistasyon.gorus, ruzgar: istenenistasyon.ruzgar})
- */
 }) 
 
 app.listen(process.env.PORT || config.port,
