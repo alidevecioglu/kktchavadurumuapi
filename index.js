@@ -224,7 +224,7 @@ if (alsancakdata == undefined) { console.log("alsancak Verisi Yüklenemedi")} el
     db.get('alsancak')
     .push({ id: 1, istasyon: 'alsancak', tarih: alsancakdata.tarih, hava: alsancakdata.hava, sicaklik: alsancakdata.sicaklik, nem: alsancakdata.nem, basinc: alsancakdata.basinc, gorus: alsancakdata.gorus, ruzgar: alsancakdata.ruzgar})
     .write()
-}  
+}
 }
 
 
@@ -241,6 +241,33 @@ app.get('/', function (req, res) {
     res.send('hello world')
   
 })
+
+app.get('/app', function (req, res) {
+    
+    res.send('Şehir Seçiniz')
+  
+})
+
+app.get('/app/:sehir', (req, res) => {
+
+    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    console.log("/app/" + req.params.sehir + " Adresine istek geldi ip : " + ip)
+
+    const veri = db.get(req.params.sehir)
+                .find({ id: 1 })
+                .value()
+    if ( veri == undefined) {console.log(req.params.sehir  + " Sorgusu atıldı ama veritabanında yok diye sorgu reddedildi"); res.send('Bu şehir henüz veritabanımıza ekli değil'); return false } 
+    else {
+        res.send('Şehir : ' + veri.istasyon + ", Güncellenme Tarihi : " + veri.tarih + ", Hava : " + veri.hava + ", Sıcaklık : " + veri.sicaklik + ", Nem : " + veri.nem + ", Basınç : " + veri.basinc + ", Görüş : " + veri.gorus + ", Rüzgar : " + veri.ruzgar)    
+    }
+
+
+ 
+/*     const istenen = limasol
+    const istenenistasyon = scrapedData.find(istenen)
+    res.json({ guncellenmetarihi: istenenistasyon.tarih, sehir: istenenistasyon.istasyon, hava: istenenistasyon.hava, sicaklik: istenenistasyon.sicaklik,  basinc: istenenistasyon.basinc, nem: istenenistasyon.nem, gorus: istenenistasyon.gorus, ruzgar: istenenistasyon.ruzgar})
+ */
+}) 
 
 app.get('/debug', function (req, res) {
     if ( config.debug == 1) {
