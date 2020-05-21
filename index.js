@@ -6,9 +6,12 @@ var leveldown = require('leveldown')
 const axios = require('axios')
 const request = require("request-promise");
 const cheerio = require("cheerio");
+var pug = require('pug');
  
 
 const app = express()
+app.set('view engine', 'pug')
+app.use(express.static('public'))
 
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
@@ -238,7 +241,7 @@ setInterval(function() {
 
 app.get('/', function (req, res) {
     
-    res.send('hello world')
+    res.render('index')
   
 })
 
@@ -284,7 +287,7 @@ app.get('/debug', function (req, res) {
 app.get('/api', function (req, res) {
     var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     console.log("/Api Sayfasına Gelen İstek : " + ip)
-    res.send('Şehir Verisi Eksik')
+    res.render('api')
 })
 
 app.get('/api/:sehir', (req, res) => {

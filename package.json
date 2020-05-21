@@ -26,6 +26,7 @@
     "levelup": "^4.4.0",
     "lowdb": "^1.0.0",
     "nstall": "^0.2.0",
+    "pug": "^2.0.4",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "tabletojson": "^2.0.4"
