@@ -1,79 +1,81 @@
 doctype html
-head
-  meta(charset='utf-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
-  title KKTC Hava Durumu Api
-  link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
-  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,700')
-  link(rel='stylesheet' href='assets/fonts/ionicons.min.css')
-  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css')
-  link(rel='stylesheet' href='assets/css/styles.min.css')
-.highlight-clean
-  .container
-    .intro
-      h2.text-center Api
-      p.text-center Uyarı ! Kıbrıs'ta ölçülen son durumlar UTC (GMT) zaman dilimine göre yayınlanmaktadır. Geçerli yerel saat uygulamamız şu anda, söz konusu zamandan 3 saat ileridedir.
-    .buttons
-      a.btn.btn-primary(role='button' href='/api/ercan') &Ouml;rnek
-.table-responsive
-  table.table
-    thead
-      tr
-        th &Scedil;ehirler
-        th Kodlar&imath;
-    tbody
-      tr
-        td &Idot;skele
-        td api/iskele
-      tr
-        td Ercan
-        td api/ercan
-      tr
-        td Larnaka
-        td api/larnaka
-      tr
-        td Limasol
-        td api/limasol
-      tr
-        td Baf
-        td api/baf
-      tr
-        td Gazima&gbreve;usa
-        td api/gazimagusa
-      tr
-        td G&uuml;zelyurt
-        td api/guzelyurt
-      tr
-        td Lefko&scedil;a
-        td api/lefkosa
-      tr
-        td Lefke
-        td api/lefke
-      tr
-        td Akdeniz
-        td api/akdeniz
-      tr
-        td Ye&scedil;il&imath;rmak
-        td api/yesilirmak
-      tr
-        td Girne
-        td api/girne
-      tr
-        td Ge&ccedil;itkale
-        td api/gecitkale
-      tr
-        td Dipkarpaz
-        td api/dipkarpaz
-      tr
-        td Yeni Erenk&ouml;y
-        td api/yenierenkoy
-      tr
-        td Alsancak
-        td api/alsancak
-.article-list
-  .container
-    .intro
-script(src='assets/js/jquery.min.js')
-script(src='assets/bootstrap/js/bootstrap.min.js')
-script(src='https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js')
-script(src='assets/js/script.min.js')
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(property='og:title', content='🌤 KKTC Hava Durumu Api')
+    meta(property='og:site_name', content='🌤 KKTC Hava Durumu Api')
+    meta(property='og:description', content="🌤 Sistem otomatik olarak her dakika K.K.T.C. Meteoroloji Dairesi'nin sitesinden güncel hava durumlarını çekip json formatında kullanıcıya sunar.")
+    meta(property='og:type', content='website')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    meta(name='title', content='🌤 KKTC Hava Durumu Api')
+    meta(name='Description', content="🌤 Sistem otomatik olarak her dakika K.K.T.C. Meteoroloji Dairesi'nin sitesinden güncel hava durumlarını çekip json formatında kullanıcıya sunar.")
+    meta(name='author', content='Ali Devecioglu')
+    meta(name='language', content='Turkish')
+    meta(name='theme-color', content='#0d0d17')
+    meta(property='twitter:title', content='🌤 KKTC Hava Durumu Api')
+    meta(property='twitter:description', content="🌤 Sistem otomatik olarak her dakika K.K.T.C. Meteoroloji Dairesi'nin sitesinden güncel hava durumlarını çekip json formatında kullanıcıya sunar.")
+    link(rel='stylesheet', href='/css/main.css')
+    title 🌤 KKTC Hava Durumu Api
+  body(ng-app='')
+    .container
+      div(style='margin-top: 20px;')
+        #card.card.shadow-lg
+          div
+            .card-header.container
+              h1 KKTC Hava Durumu Api 
+              h1.small 🌤
+          .row.card-body
+            .container
+              h2 Anlık Api
+              h1.small(style='color: #9d9baf;')
+                a(href='http://kktcmeteor.org/', target='_blank') K.K.T.C. Meteoroloji Dairesi'nin
+                |  sitesinden alınan en güncel veriyi json formatında sunar. [Uyarı ! Kıbrıs'ta ölçülen son durumlar UTC (GMT) zaman dilimine göre yayınlanmaktadır. Geçerli yerel saat uygulamamız şu anda, söz konusu zamandan 3 saat ileridedir.]
+              p.small(style='color: #9d9baf;')
+                | Sorgulana bilecek Şehirler : 
+                a(style='color: white;')
+                a(href='/api/anlik/limasol') limasol
+                | , 
+                a(href='/api/anlik/ercan') ercan
+                | , 
+                a(href='/api/anlik/larnaka') larnaka
+                | , 
+                a(href='/api/anlik/baf') baf
+                | , 
+                a(href='/api/anlik/iskele') iskele
+                | , 
+                a(href='/api/anlik/gazimagusa') gazimagusa
+                | , 
+                a(href='/api/anlik/lefke') lefke
+                | , 
+                a(href='/api/anlik/akdeniz') akdeniz
+                | , 
+                a(href='/api/anlik/yesilirmak') yesilirmak
+                | , 
+                a(href='/api/anlik/girne') girne
+                | , 
+                a(href='/api/anlik/lefkosa') lefkosa
+                | , 
+                a(href='/api/anlik/gecitkale') gecitkale
+                | , 
+                a(href='/api/anlik/dipkarpaz') dipkarpaz
+                | , 
+                a(href='/api/anlik/yenierenkoy') yenierenkoy
+                | , 
+                a(href='/api/anlik/alsancak') alsancak
+                | , 
+                a(href='/api/anlik/guzelyurt') guzelyurt
+              p
+                a.btn.btn-primary(target='_blank', href='/api/anlik/ercan') Örnek
+            .container
+              h2 Uyarı Api
+              h1.small(style='color: #9d9baf;')
+                a(href='http://kktcmeteor.org/', target='_blank') K.K.T.C. Meteoroloji Dairesi'nin
+                |  sitesinden alınan en günce uyarıları kullanıcıya json formatında sunar.
+              p
+                a.btn.btn-primary(target='_blank', href='/api/uyarilar') Uyarılar
+          .card-footer
+            .row
+              .container.col

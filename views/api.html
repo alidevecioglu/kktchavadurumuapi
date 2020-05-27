@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="🌤 KKTC Hava Durumu Api">
+    <meta property="og:site_name" content="🌤 KKTC Hava Durumu Api">
+    <meta property="og:description" content="🌤 Sistem otomatik olarak her dakika K.K.T.C. Meteoroloji Dairesi'nin sitesinden güncel hava durumlarını çekip json formatında kullanıcıya sunar.">
+    <meta property="og:type" content="website">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="title" content="🌤 KKTC Hava Durumu Api">
+    <meta name="Description" content="🌤 Sistem otomatik olarak her dakika K.K.T.C. Meteoroloji Dairesi'nin sitesinden güncel hava durumlarını çekip json formatında kullanıcıya sunar.">
+    <meta name="author" content="Ali Devecioglu">
+    <meta name="language" content="Turkish">
+    <meta name="theme-color" content="#0d0d17"/>
+    <meta property="twitter:title" content="🌤 KKTC Hava Durumu Api">
+    <meta property="twitter:description" content="🌤 Sistem otomatik olarak her dakika K.K.T.C. Meteoroloji Dairesi'nin sitesinden güncel hava durumlarını çekip json formatında kullanıcıya sunar.">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="js/angular.min.js"></script>
+
+
+    <title>🌤 KKTC Hava Durumu Api</title>
+
+
+
+</head>
+<body ng-app>
+    <div class="container">
+        <div class="" style="margin-top: 20px;">
+            <div class="card shadow-lg" id="card">
+                <div class="">
+                    <div class="card-header container">
+                        <h1>KKTC Hava Durumu Api <h1 class="small">🌤</h1></h1>
+                    </div>
+                </div>
+                <div class="row card-body">
+                    <div class="container">
+                        <h2>Anlık Api</h2>
+                        <h1 class="small" style="color: #9d9baf;"><a href="http://kktcmeteor.org/" target="_blank">K.K.T.C. Meteoroloji Dairesi'nin</a> sitesinden alınan en güncel veriyi json formatında sunar. [Uyarı ! Kıbrıs'ta ölçülen son durumlar UTC (GMT) zaman dilimine göre yayınlanmaktadır. Geçerli yerel saat uygulamamız şu anda, söz konusu zamandan 3 saat ileridedir.]</h1>
+                        <p class="small" style="color: #9d9baf;">Sorgulana bilecek Şehirler : <a style="color: white;"><a href="/api/anlik/limasol">limasol</a>, <a href="/api/anlik/ercan">ercan</a>, <a href="/api/anlik/larnaka">larnaka</a>, <a href="/api/anlik/baf">baf</a>, <a href="/api/anlik/iskele">iskele</a>, <a href="/api/anlik/gazimagusa">gazimagusa</a>, <a href="/api/anlik/lefke">lefke</a>, <a href="/api/anlik/akdeniz">akdeniz</a>, <a href="/api/anlik/yesilirmak">yesilirmak</a>, <a href="/api/anlik/girne">girne</a>, <a href="/api/anlik/lefkosa">lefkosa</a>, <a href="/api/anlik/gecitkale">gecitkale</a>, <a href="/api/anlik/dipkarpaz">dipkarpaz</a>, <a href="/api/anlik/yenierenkoy">yenierenkoy</a>, <a href="/api/anlik/alsancak">alsancak</a>, <a href="/api/anlik/guzelyurt">guzelyurt</a></a></p>
+                        <p><a class="btn btn-primary" target="_blank" href="/api/anlik/ercan">Örnek</a></p>
+                    </div>
+                    
+                    <div class="container">
+                        <h2>Uyarı Api</h2>
+                        <h1 class="small" style="color: #9d9baf;"><a href="http://kktcmeteor.org/" target="_blank">K.K.T.C. Meteoroloji Dairesi'nin</a> sitesinden alınan en günce uyarıları kullanıcıya json formatında sunar.</h1>
+                        <p><a class="btn btn-primary" target="_blank" href="/api/uyarilar">Uyarılar</a></p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="container col">
+
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
