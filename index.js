@@ -1,5 +1,4 @@
 var config = require('./config');
-
 const express = require('express')
 var levelup = require('levelup')
 var leveldown = require('leveldown')
@@ -19,7 +18,7 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('db.json')
 const db = low(adapter)
 
-db.defaults({ limasol: [], ercan: [], larnaka: [], baf: [], iskele: [], gazimagusa: [], lefke: [], akdeniz: [], yesilirmak: [], girne: [], lefkosa: [], gecitkale: [], dipkarpaz: [], yenierenkoy: [], alsancak: [], guzelyurt: [] })
+db.defaults({ limasol: [], ercan: [], larnaka: [], baf: [], iskele: [], gazimagusa: [], lefke: [], akdeniz: [], yesilirmak: [], girne: [], lefkosa: [], gecitkale: [], dipkarpaz: [], yenierenkoy: [], alsancak: [], guzelyurt: [], uyarilar: [] })
   .write()
 
   String.prototype.turkishtoEnglish = function () {
@@ -69,11 +68,31 @@ async function anlikdbupdate() {
     console.log("Anlik DB Güncellendi")
 }
 
+async function uyarilardbupdate() {
+    const result = await request.get("http://kktcmeteor.org/");
+    const $ = cheerio.load(result);
+    const scrapedData = [];
+    const uyari = $("#ctl01 > div.highlightSection > div > div > div.col-md-8 > div > div > div > marquee > p").text()
+    const uyaritrim = uyari.trim()
+    const uyarifinal = uyaritrim.replace(/\s\s+/g, ' ')
+
+    db.get("uyarilar")
+    .remove({ id: 1 })
+    .write()
+
+    db.get("uyarilar")
+    .push({ id: 1, uyarilar: uyarifinal})
+    .write() 
+    
+    console.log("Uyarilar DB Güncellendi")
+}
+
 
 var minutes = config.dbtime, the_interval = minutes * 60 * 1000;
 setInterval(function() {
   console.log( config.dbtime + " Dakikaya Ayarlı DB Güncelleme Çalıştırılıyor");
   anlikdbupdate();
+  uyarilardbupdate();
 }, the_interval);
 
 
@@ -112,6 +131,7 @@ app.get('/debug', function (req, res) {
 
     if ( config.debug == 1) {
         anlikdbupdate();
+        uyarilardbupdate();
         res.send('Debuging Aktif Veritabanı yenilendi')
         console.log("Debuging işlemi alındı ip : " + ip)
     } else {
@@ -127,7 +147,7 @@ app.get('/api', function (req, res) {
     res.render('api')
 })
 
-app.get('/api/:sehir', (req, res) => {
+app.get('/api/anlik/:sehir', (req, res) => {
 
     var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     console.log("/api/" + req.params.sehir + " Adresine istek geldi ip : " + ip)
@@ -137,6 +157,19 @@ app.get('/api/:sehir', (req, res) => {
                 .value()
     if ( veri == undefined) {console.log(req.params.sehir  + " Sorgusu atıldı ama veritabanında yok diye sorgu reddedildi"); res.send('Bu şehir henüz veritabanımıza ekli değil'); return false } 
     else {res.json({ guncellenmetarihi: veri.tarih, sehir: veri.istasyon, hava: veri.hava, sicaklik: veri.sicaklik, basinc: veri.basinc, nem: veri.nem, gorus: veri.gorus, ruzgar: veri.ruzgar})}
+
+
+}) 
+
+app.get('/api/uyarilar', (req, res) => {
+
+    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    console.log("/api/uyarilar Adresine istek geldi ip : " + ip)
+
+    const veri = db.get("uyarilar")
+                .find({ id: 1 })
+                .value()
+    res.json({ uyarilar: veri.uyarilar})
 
 
 }) 

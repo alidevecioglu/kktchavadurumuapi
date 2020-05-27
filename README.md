@@ -11,4 +11,4 @@ $ npm start
 # Planlar
 
 * 3 günlük hava tahmini [ Api ]
-* Uyarı ve ikazlar [ Api ]
+* Uyarı ve ikazlar [ Api ] // Eklendi
