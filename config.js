@@ -1,5 +1,10 @@
 var config = {};
 
+// DB Ayarları
+
+config.dbtime = 1; // Kaç Dakikada sonra veri tabanı güncellensin ?
+
+
 // Web Ayarları
 
 config.debug = 0;
