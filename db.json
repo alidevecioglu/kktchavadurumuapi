@@ -3,214 +3,214 @@
     {
       "id": 1,
       "istasyon": "limasol",
-      "tarih": "27.05.2020 15:50",
-      "hava": "Kuvvetli Ruzgar",
-      "sicaklik": "22°C",
-      "nem": "73 %",
-      "basinc": "1012 hPa",
+      "tarih": "26.09.2020 09:50",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "29°C",
+      "nem": "62 %",
+      "basinc": "1010 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (270) 17 kt."
+      "ruzgar": "Batıdan (250) 13 kt."
     }
   ],
   "ercan": [
     {
       "id": 1,
       "istasyon": "ercan",
-      "tarih": "27.05.2020 16:20",
-      "hava": "Kuvvetli Ruzgar",
-      "sicaklik": "22°C",
-      "nem": "64 %",
-      "basinc": "1012 hPa",
+      "tarih": "26.09.2020 09:50",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "32°C",
+      "nem": "24 %",
+      "basinc": "1010 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (290) 19 kt."
+      "ruzgar": "Sakin (0) 0 kt."
     }
   ],
   "larnaka": [
     {
       "id": 1,
       "istasyon": "larnaka",
-      "tarih": "27.05.2020 16:00",
-      "hava": "HAVA ACIK",
-      "sicaklik": "25°C",
-      "nem": "61 %",
-      "basinc": "1012 hPa",
+      "tarih": "26.09.2020 10:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "31°C",
+      "nem": "55 %",
+      "basinc": "1010 hPa",
       "gorus": "10 km",
-      "ruzgar": "Güneybatıdan (220) 8 kt."
+      "ruzgar": "Güneybatıdan (210) 12 kt."
     }
   ],
   "baf": [
     {
       "id": 1,
       "istasyon": "baf",
-      "tarih": "27.05.2020 16:00",
-      "hava": "Kuvvetli Ruzgar",
-      "sicaklik": "22°C",
-      "nem": "64 %",
-      "basinc": "1013 hPa",
+      "tarih": "26.09.2020 10:00",
+      "hava": "AZ BULUTLU",
+      "sicaklik": "29°C",
+      "nem": "62 %",
+      "basinc": "1011 hPa",
       "gorus": "10 km",
-      "ruzgar": "Kuzeybatıdan (300) 16 kt."
+      "ruzgar": "Batıdan (250) 9 kt."
     }
   ],
   "iskele": [
     {
       "id": 1,
       "istasyon": "iskele",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "27°C",
-      "nem": " 36 %",
-      "basinc": "1012.1 hPa",
+      "sicaklik": "30.6°C",
+      "nem": " 45 %",
+      "basinc": "1010 hPa",
       "gorus": "10 km",
-      "ruzgar": "Kuzeybatıdan (310) 11 kt."
+      "ruzgar": "Kuzeydoğudan (40) 9 kt."
     }
   ],
   "gazimagusa": [
     {
       "id": 1,
       "istasyon": "gazimagusa",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "25.9°C",
-      "nem": " 44 %",
-      "basinc": "1014.4 hPa",
+      "sicaklik": "28°C",
+      "nem": " 63 %",
+      "basinc": "1012 hPa",
       "gorus": "10 km",
-      "ruzgar": "Güneyden (200) 4 kt."
+      "ruzgar": "Doğudan (110) 11 kt."
     }
   ],
   "lefke": [
     {
       "id": 1,
       "istasyon": "lefke",
-      "tarih": "27.05.2020 16:00",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "21.5°C",
-      "nem": " 70 %",
-      "basinc": "1013.2 hPa",
+      "tarih": "26.09.2020 10:00",
+      "hava": "HAVA ACIK",
+      "sicaklik": "27.4°C",
+      "nem": " 62 %",
+      "basinc": "1009.7 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (260) 22 kt."
+      "ruzgar": "Batıdan (260) 16 kt."
     }
   ],
   "akdeniz": [
     {
       "id": 1,
       "istasyon": "akdeniz",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "20.9°C",
-      "nem": " 71 %",
-      "basinc": "1015 hPa",
+      "sicaklik": "29°C",
+      "nem": " 58 %",
+      "basinc": "1011.3 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (270) 7 kt."
+      "ruzgar": "Batıdan (280) 11 kt."
     }
   ],
   "yesilirmak": [
     {
       "id": 1,
       "istasyon": "yesilirmak",
-      "tarih": "27.05.2020 14:00",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "22°C",
-      "nem": " 64 %",
-      "basinc": "1014.3 hPa",
+      "tarih": "26.09.2020 10:00",
+      "hava": "HAVA ACIK",
+      "sicaklik": "28.5°C",
+      "nem": " 56 %",
+      "basinc": "1010.9 hPa",
       "gorus": "10 km",
-      "ruzgar": "Kuzeybatıdan (300) 24 kt."
+      "ruzgar": "Kuzeybatıdan (300) 5 kt."
     }
   ],
   "girne": [
     {
       "id": 1,
       "istasyon": "girne",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "22.4°C",
-      "nem": " 68 %",
-      "basinc": "1014.3 hPa",
+      "sicaklik": "29.6°C",
+      "nem": " 55 %",
+      "basinc": "1011.8 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (290) 11 kt."
+      "ruzgar": "Kuzeybatıdan (300) 10 kt."
     }
   ],
   "lefkosa": [
     {
       "id": 1,
       "istasyon": "lefkosa",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "22.1°C",
-      "nem": " 63 %",
-      "basinc": "1015 hPa",
+      "sicaklik": "32.3°C",
+      "nem": " 23 %",
+      "basinc": "1011.3 hPa",
       "gorus": "10 km",
-      "ruzgar": "Güneybatıdan (220) 8 kt."
+      "ruzgar": "Sakin (0) 0 kt."
     }
   ],
   "gecitkale": [
     {
       "id": 1,
       "istasyon": "gecitkale",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "24.6°C",
-      "nem": " 52 %",
-      "basinc": "1013.3 hPa",
+      "sicaklik": "33.3°C",
+      "nem": " 23 %",
+      "basinc": "1010.7 hPa",
       "gorus": "10 km",
-      "ruzgar": "Kuzeyden (340) 13 kt."
+      "ruzgar": "Kuzeybatıdan (330) 5 kt."
     }
   ],
   "dipkarpaz": [
     {
       "id": 1,
       "istasyon": "dipkarpaz",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "21.3°C",
-      "nem": " 67 %",
-      "basinc": "1012.7 hPa",
+      "sicaklik": "26.7°C",
+      "nem": " 66 %",
+      "basinc": "1010.1 hPa",
       "gorus": "10 km",
-      "ruzgar": "Kuzeydoğudan (30) 11 kt."
+      "ruzgar": "Kuzeybatıdan (310) 8 kt."
     }
   ],
   "yenierenkoy": [
     {
       "id": 1,
       "istasyon": "yenierenkoy",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "21.5°C",
-      "nem": " 70 %",
-      "basinc": "1013.1 hPa",
+      "sicaklik": "29.2°C",
+      "nem": " 58 %",
+      "basinc": "1009.9 hPa",
       "gorus": "10 km",
-      "ruzgar": "Doğudan (90) 7 kt."
+      "ruzgar": "Batıdan (280) 10 kt."
     }
   ],
   "alsancak": [
     {
       "id": 1,
       "istasyon": "alsancak",
-      "tarih": "27.05.2020 16:00",
+      "tarih": "26.09.2020 10:00",
       "hava": "HAVA ACIK",
-      "sicaklik": "21.7°C",
-      "nem": " 71 %",
-      "basinc": "1014.7 hPa",
+      "sicaklik": "27.5°C",
+      "nem": " 65 %",
+      "basinc": "1011.4 hPa",
       "gorus": "10 km",
-      "ruzgar": "Batıdan (290) 17 kt."
+      "ruzgar": "Batıdan (270) 12 kt."
     }
   ],
   "guzelyurt": [
     {
       "id": 1,
       "istasyon": "guzelyurt",
-      "tarih": "27.05.2020 14:00",
-      "hava": "AZ BULUTLU",
-      "sicaklik": "22.5°C",
-      "nem": " 67 %",
-      "basinc": "1012.9 hPa",
+      "tarih": "26.09.2020 10:00",
+      "hava": "HAVA ACIK",
+      "sicaklik": "29.5°C",
+      "nem": " 49 %",
+      "basinc": "1010.1 hPa",
       "gorus": "10 km",
-      "ruzgar": "Kuzeybatıdan (300) 10 kt."
+      "ruzgar": "Batıdan (290) 9 kt."
     }
   ],
   "uyarilar": [
     {
       "id": 1,
-      "uyarilar": "ORMAN YANGIN OLASILIĞI ÇOK YÜKSEK ULTRAVİYOLE RADYASYONU ÇOK YÜKSEK ( Gerekli tedbirler alınmadan özellikle 11:00 - 16:00 saatleri arasında 10 dk. dan fazla güneş altında kalınmaması gerekmektedir.)"
+      "uyarilar": "ORMAN YANGIN OLASILIĞI YÜKSEK ULTRAVİYOLE RADYASYONU YÜKSEK ( Gerekli tedbirler alınmadan özellikle 11:00 - 16:00 saatleri arasında 15 dk. dan fazla güneş altında kalınmaması gerekmektedir.)"
     }
   ]
 }
