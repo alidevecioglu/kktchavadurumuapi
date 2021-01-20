@@ -1,13 +1,12 @@
-var config = require('./config');
-const express = require('express')
-var levelup = require('levelup')
+const request = require("request-promise")
 var leveldown = require('leveldown')
+const cheerio = require("cheerio")
+const express = require('express')
+var config = require('./config')
+var levelup = require('levelup')
 const axios = require('axios')
-const request = require("request-promise");
-const cheerio = require("cheerio");
 var pug = require('pug');
  
-
 const app = express()
 app.set('view engine', 'pug')
 app.use(express.static('public'))
@@ -35,7 +34,6 @@ db.defaults({ limasol: [], ercan: [], larnaka: [], baf: [], iskele: [], gazimagu
         .replace('ö','o')
         .replace('ç','c');
 };
-
 
 async function anlikdbupdate() {
     const result = await request.get("http://kktcmeteor.org/sondurumlar/kktc-geneltablo");
@@ -87,7 +85,6 @@ async function uyarilardbupdate() {
     console.log("Uyarilar DB Güncellendi")
 }
 
-
 var minutes = config.dbtime, the_interval = minutes * 60 * 1000;
 setInterval(function() {
   console.log( config.dbtime + " Dakikaya Ayarlı DB Güncelleme Çalıştırılıyor");
@@ -95,25 +92,15 @@ setInterval(function() {
   uyarilardbupdate();
 }, the_interval);
 
-
 // Routes
-
-
 app.get('/', function (req, res) {
-    
     res.render('index')
-  
 })
-
 app.get('/app', function (req, res) {
-    
     res.send('Şehir Seçiniz')
-  
 })
-
 app.get('/app/:sehir', (req, res) => {
-
-    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
     console.log("/app/" + req.params.sehir + " Adresine istek geldi ip : " + ip)
 
     const veri = db.get(req.params.sehir)
@@ -123,12 +110,10 @@ app.get('/app/:sehir', (req, res) => {
     else {
         res.send('Şehir : ' + veri.istasyon + ", Güncellenme Tarihi : " + veri.tarih + ", Hava : " + veri.hava + ", Sıcaklık : " + veri.sicaklik + ", Nem : " + veri.nem + ", Basınç : " + veri.basinc + ", Görüş : " + veri.gorus + ", Rüzgar : " + veri.ruzgar)    
     }
-
 }) 
 
 app.get('/debug', function (req, res) {
-    var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-
+    var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
     if ( config.debug == 1) {
         anlikdbupdate();
         uyarilardbupdate();
@@ -137,8 +122,6 @@ app.get('/debug', function (req, res) {
     } else {
         res.send('Debuging Aktif Değil')
     }
-
-  
 })
 
 app.get('/api', function (req, res) {
@@ -158,7 +141,6 @@ app.get('/api/anlik/:sehir', (req, res) => {
     if ( veri == undefined) {console.log(req.params.sehir  + " Sorgusu atıldı ama veritabanında yok diye sorgu reddedildi"); res.send('Bu şehir henüz veritabanımıza ekli değil'); return false } 
     else {res.json({ guncellenmetarihi: veri.tarih, sehir: veri.istasyon, hava: veri.hava, sicaklik: veri.sicaklik, basinc: veri.basinc, nem: veri.nem, gorus: veri.gorus, ruzgar: veri.ruzgar})}
 
-
 }) 
 
 app.get('/api/uyarilar', (req, res) => {
@@ -170,9 +152,7 @@ app.get('/api/uyarilar', (req, res) => {
                 .find({ id: 1 })
                 .value()
     res.json({ uyarilar: veri.uyarilar})
-
-
 }) 
 
 app.listen(process.env.PORT || config.port,
-	() => console.log("Sunucu Çalışıyor..."));
+	() => console.log("Sunucu Çalışıyor. Port: "+ config.port));
